@@ -36,7 +36,6 @@ const page = await browser.newPage();
 
     console.log('Navigated to https://www.coingecko.com/account/sign_in');
   
-    await page.waitForSelector('form#new_user');
 
     await page.type('input#user_email', process.env.USERNAME);
     await page.type('input#user_password', process.env.PASSWORD);
